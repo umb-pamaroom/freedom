@@ -16,8 +16,8 @@
 
                 <hr>
 
-                <p><a href="{% url 'followers' user.username %}">Followers: {{ user.oinkerprofile.followed_by.count }}</a></p>
-                <p><a href="{% url 'follows' user.username %}">Follows: {{ user.oinkerprofile.follows.count }}</a></p>
+                <p><a href="{% url 'followers' user.username %}">フォロワー: {{ user.oinkerprofile.followed_by.count }}</a></p>
+                <p><a href="{% url 'follows' user.username %}">フォロー: {{ user.oinkerprofile.follows.count }}</a></p>
 
                 {% if user != request.user %}
                     <a href="{% url 'conversation' user.id %}" class="button is-info">Send message</a>
