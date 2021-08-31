@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class ConversationConfig(AppConfig):
-    name = 'conversation'
+    # name = 'conversation'
+    name = 'apps.conversation'
